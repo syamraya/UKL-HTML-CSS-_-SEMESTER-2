@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Kelas XR3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-blue-50 to-white min-h-screen">
+    <!-- Navbar -->
+    <header
+      class="bg-blue-100/80 backdrop-blur-md text-gray-800 shadow sticky top-0 z-50"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <h1 class="text-2xl font-bold tracking-wide flex items-center gap-2">
+            <img
+              src="MOXELGA-removebg-preview.png"
+              alt="kelas"
+              class="w-12 h-12 inline-mt-2"
+            />
+            Kelas XR3
+          </h1>
+          <nav class="hidden md:flex space-x-6">
+            <a href="#tugas" class="hover:underline hover:scale-105 transition"
+              >Tugas</a
+            >
+            <a
+              href="#struktur"
+              class="hover:underline hover:scale-105 transition"
+              >Struktur</a
+            >
+            <a href="#piket" class="hover:underline hover:scale-105 transition"
+              >Piket</a
+            >
+          </nav>
+          <div class="md:hidden">
+            <button onclick="toggleMenu()" class="focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="menu" class="md:hidden hidden space-y-2 pb-4">
+          <a href="#tugas" class="block px-3 py-2 bg-grey-600 rounded">Tugas</a>
+          <a href="#struktur" class="block px-3 py-2 bg-grey-600 rounded"
+            >Struktur</a
+          >
+          <a href="#piket" class="block px-3 py-2 bg-grey-600 rounded">Piket</a>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative text-center bg-white shadow-inner text-white h-[50vh] overflow-hidden"
+    >
+      <img
+        src="WhatsApp Image 2025-05-20 at 09.01.35_4dd88be6.jpg"
+        alt="XR3"
+        class="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+      <div
+        class="relative z-10 flex flex-col items-center justify-center h-full px-4"
+      >
+        <h2 class="text-3xl font-bold">Selamat Datang di Website Kelas XR3</h2>
+        <p class="mt-2">
+          Tempat semua informasi penting tentang kelasmu tersedia!
+        </p>
+      </div>
+    </section>
+
+    <!-- Tugas Kelas -->
+    <section id="tugas" class="py-12 px-4 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6 text-blue-700">
+        📚 Daftar Tugas Kelas
+      </h2>
+      <div class="space-y-4">
+        <!-- Item tugas -->
+        <div class="flex items-start bg-white rounded-lg shadow-md p-4 gap-4">
+          <img
+            src="posterjpg.jpg"
+            alt="Desain Poster"
+            class="w-20 h-20 object-cover rounded-md flex-shrink-0"
+          />
+          <div>
+            <a href="#" class="text-blue-600 font-semibold hover:underline"
+              >Tugas 1: Desain Poster</a
+            >
+            <p class="text-gray-600 text-sm mt-1">
+              Buat poster promosi kegiatan sekolah menggunakan Canva atau
+              Photoshop.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start bg-white rounded-lg shadow-md p-4 gap-4">
+          <img
+            src="artikel.jpg"
+            alt="Artikel Opini"
+            class="w-20 h-20 object-cover rounded-md flex-shrink-0"
+          />
+          <div>
+            <a href="#" class="text-blue-600 font-semibold hover:underline"
+              >Tugas 2: Artikel Opini</a
+            >
+            <p class="text-gray-600 text-sm mt-1">
+              Tulis artikel opini minimal 300 kata tentang isu sosial di
+              sekitar.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start bg-white rounded-lg shadow-md p-4 gap-4">
+          <img
+            src="present.png"
+            alt="Video Presentasi"
+            class="w-20 h-20 object-cover rounded-md flex-shrink-0"
+          />
+          <div>
+            <a href="#" class="text-blue-600 font-semibold hover:underline"
+              >Tugas 3: Video Presentasi</a
+            >
+            <p class="text-gray-600 text-sm mt-1">
+              Rekam presentasi tentang materi pelajaran IPS dan upload ke
+              YouTube (privat).
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start bg-white rounded-lg shadow-md p-4 gap-4">
+          <img
+            src="rangkuman.jpg"
+            alt="Resume Buku"
+            class="w-20 h-20 object-cover rounded-md flex-shrink-0"
+          />
+          <div>
+            <a href="#" class="text-blue-600 font-semibold hover:underline"
+              >Tugas 4: Resume Buku</a
+            >
+            <p class="text-gray-600 text-sm mt-1">
+              Buat rangkuman dari buku fiksi atau non-fiksi favorit kalian dalam
+              1 halaman.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start bg-white rounded-lg shadow-md p-4 gap-4">
+          <img
+            src="infografis.jpg"
+            alt="Infografis"
+            class="w-20 h-20 object-cover rounded-md flex-shrink-0"
+          />
+          <div>
+            <a href="#" class="text-blue-600 font-semibold hover:underline"
+              >Tugas 5: Infografis</a
+            >
+            <p class="text-gray-600 text-sm mt-1">
+              Desain infografis bertema "Bahaya Sampah Plastik" dan kirim via
+              Google Drive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Struktur Kelas -->
+    <section id="struktur" class="py-12 px-4 bg-blue-50">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold text-blue-700">
+          👥 Struktur Organisasi Kelas
+        </h2>
+        <a
+          href="anggota.html"
+          class="text-blue-600 hover:underline text-sm font-medium"
+          >Selengkapnya → →</a
+        >
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div
+          class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition"
+        >
+          <h3 class="font-semibold text-blue-600">Ketua Kelas</h3>
+          <p>Akira Saskara Hartono</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition"
+        >
+          <h3 class="font-semibold text-blue-600">Wakil Ketua</h3>
+          <p>Fattan Arifudin</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition"
+        >
+          <h3 class="font-semibold text-blue-600">Bendahara</h3>
+          <p>Fidela Putri Andriana</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition"
+        >
+          <h3 class="font-semibold text-blue-600">Sekretaris</h3>
+          <p>Kendra Respati Maheswara Ugroho</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jadwal Piket -->
+    <section id="jadwal-piket" class="py-8 px-4 bg-white">
+      <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">
+        🧹 Jadwal Piket Mingguan
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+        <!-- Senin -->
+        <div class="bg-blue-50 p-6 rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-blue-700 mb-3">Senin</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-1 text-base">
+            <li>Alya</li>
+            <li>Rafael</li>
+            <li>Regan</li>
+            <li>Wira</li>
+            <li>Azhar</li>
+          </ul>
+        </div>
+
+        <!-- Selasa -->
+        <div class="bg-blue-50 p-6 rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-blue-700 mb-3">Selasa</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-1 text-base">
+            <li>Violet</li>
+            <li>Gesya</li>
+            <li>Fattan</li>
+            <li>Kendra</li>
+            <li>Ibra</li>
+          </ul>
+        </div>
+
+        <!-- Rabu -->
+        <div class="bg-blue-50 p-6 rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-blue-700 mb-3">Rabu</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-1 text-base">
+            <li>Galang</li>
+            <li>Ihssan</li>
+            <li>Jasmir</li>
+            <li>Rafani</li>
+            <li>Akira</li>
+          </ul>
+        </div>
+
+        <!-- Kamis -->
+        <div class="bg-blue-50 p-6 rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-blue-700 mb-3">Kamis</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-1 text-base">
+            <li>Queen</li>
+            <li>Almira</li>
+            <li>Fidella</li>
+            <li>Dimas</li>
+            <li>Danish</li>
+          </ul>
+        </div>
+
+        <!-- Jumat -->
+        <div class="bg-blue-50 p-6 rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-blue-700 mb-3">Jumat</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-1 text-base">
+            <li>Dannies</li>
+            <li>Danish</li>
+            <li>Yusuf</li>
+            <li>Hanan</li>
+            <li>Alif</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white py-6 mt-10">
+      <div class="text-center">
+        <p class="font-semibold">&copy; 2025 Kelas XR3</p>
+        <p class="text-sm">Dibuat dengan ❤️ oleh Syamraya</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
